@@ -1,0 +1,286 @@
+/* Reset and base styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e;
+  font-family: sans-serif;
+  color: #a0a0a0;
+  line-height: 1.6;
+}
+
+/* Layout */
+.main-container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  border-radius: 16px;
+  padding: 40px;
+  height: 90vh;
+}
+
+/* Profile */
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 1px solid #3a3a3a;
+}
+
+.profile h2 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: #e0e0e0;
+}
+
+.profile p {
+  background-color: #1e1e1e;
+  display: inline-block;
+  padding: 5px 12px;
+  color: #ffbf00;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Contact Info */
+.contact {
+  margin-top: 30px;
+  border-top: 2px solid #3a3a3a;
+  padding-top: 20px;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #a0a0a0;
+}
+
+.value {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.email, .phone {
+  margin-bottom: 15px;
+}
+
+/* Social Links */
+.social {
+  margin-top: 30px;
+  border-top: 2px solid #3a3a3a;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.social a {
+  color: #a0a0a0;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social a:hover {
+  color: #ffbf00;
+}
+
+/* Main Content */
+.main-content {
+  background-color: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+/* Navigation */
+#navigation {
+  border-bottom: 2px solid #3a3a3a;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+nav a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a.active, nav a:hover {
+  color: #ffbf00;
+}
+
+/* Section Headings */
+.heading {
+  color: #e0e0e0;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 60px;
+  height: 5px;
+  background-color: #ffbf00;
+  margin-bottom: 15px;
+}
+
+/* About Section */
+#about {
+  margin-bottom: 40px;
+}
+
+.content {
+  text-align: justify;
+  color: #a0a0a0;
+}
+
+/* Skills Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.item {
+  background-color: #1e1e1e;
+  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.item img {
+  height: 40px;
+  margin-bottom: 10px;
+  filter: invert(75%) sepia(60%) saturate(500%) hue-rotate(350deg);
+}
+
+.item h3 {
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+/* Education */
+#education {
+  margin-top: 40px;
+}
+
+.year {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+}
+
+.degree {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+.college {
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+.work {
+  color: #a0a0a0;
+  margin-top: 10px;
+}
+
+/* Portfolio */
+#portfolio {
+  margin-top: 40px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.project {
+  background-color: #1e1e1e;
+  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.project img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card {
+  padding: 20px;
+}
+
+.card h3 {
+  color: #e0e0e0;
+}
+
+.card p {
+  color: #a0a0a0;
+  margin: 10px 0;
+}
+
+.card span {
+  background-color: rgba(255, 191, 0, 0.1);
+  color: #ffbf00;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
